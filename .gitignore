@@ -1,0 +1,28 @@
+# Logs
+logs
+*.log
+
+# Temp
+tmp/
+*.tmp
+*.swp
+*~
+
+# Environment
+.env
+.env.*
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# Claude
+.claude/

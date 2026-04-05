@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGISI — Разработка AI-агентов в Москве | Внедрение ИИ для бизнеса</title>
+    <meta name="description" content="AGISI — студия разработки AI-агентов в Москве. Создаём интеллектуальных ассистентов, чат-ботов, RAG-системы и автоматизируем бизнес-процессы с помощью ИИ. Бесплатная консультация.">
+    <meta name="keywords" content="разработка AI агентов Москва, создание AI ассистентов, ИИ автоматизация бизнеса, чат-бот с искусственным интеллектом, разработка чат-ботов Москва, внедрение ИИ, AI агент под ключ, RAG система, мультиагентные системы, нейросети для бизнеса, Claude, GPT, искусственный интеллект разработка, AI интеграция CRM, голосовой ИИ ассистент, автоматизация с нейросетями Москва">
+    <meta name="author" content="AGISI">
+    <link rel="canonical" href="https://asigi.ru/">
+    <meta name="geo.region" content="RU-MOW">
+    <meta name="geo.placename" content="Москва">
+    <meta name="geo.position" content="55.7558;37.6173">
+    <meta name="ICBM" content="55.7558, 37.6173">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AGISI — Разработка AI-агентов в Москве">
+    <meta property="og:description" content="Создаём AI-агентов, чат-ботов и RAG-системы для бизнеса. Внедрение ИИ под ключ в Москве.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://asigi.ru/">
+    <meta property="og:image" content="https://asigi.ru/site-preview.png">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="AGISI">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AGISI — Разработка AI-агентов в Москве">
+    <meta name="twitter:description" content="Создаём AI-агентов и автоматизируем бизнес с помощью ИИ.">
+    <meta name="twitter:image" content="https://asigi.ru/site-preview.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#0EA5E9">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "AGISI",
+        "alternateName": "AGISI",
+        "description": "Студия разработки AI-агентов в Москве. Создаём интеллектуальных ассистентов, чат-ботов, RAG-системы для бизнеса.",
+        "url": "https://asigi.ru",
+        "telephone": "+79528142010",
+        "email": "hello@asigi.ru",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Москва",
+            "addressRegion": "Москва",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.7558,
+            "longitude": 37.6173
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Москва"
+        },
+        "serviceType": [
+            "Разработка AI-агентов",
+            "Создание чат-ботов с ИИ",
+            "Внедрение RAG-систем",
+            "ИИ-автоматизация бизнес-процессов",
+            "Интеграция искусственного интеллекта",
+            "AI-консалтинг"
+        ],
+        "priceRange": "от 100 000 руб.",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "10:00",
+            "closes": "19:00"
+        },
+        "sameAs": ["https://t.me/agi_studio"]
+    }
+    </script>
+
+    <!-- Structured Data: FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Сколько стоит разработка AI-агента?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Стоимость зависит от сложности. Базовый AI-агент — от 100 000 руб., кастомная разработка с интеграциями — от 250 000 руб., комплексное решение под ключ — от 500 000 руб."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Сколько времени занимает разработка?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "MVP AI-агента — 2-3 недели. Полноценное решение с интеграциями — 1-2 месяца. Сроки зависят от количества интеграций и сложности бизнес-логики."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Какие AI-модели вы используете?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Работаем с Claude (Anthropic), GPT-4o (OpenAI), GigaChat (Сбер), YandexGPT, Llama, Mistral и другими. Подбираем модель под задачу и бюджет."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Работаете ли вы с компаниями за пределами Москвы?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Да, работаем удалённо по всей России и СНГ. Основной офис в Москве, но большинство проектов ведём дистанционно."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Главная",
+                "item": "https://asigi.ru/"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a);
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=107025632', 'ym');
+        ym(107025632, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+</head>
+<body>
+    <noscript><div><img src="https://mc.yandex.ru/watch/107025632" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="top-bar-inner">
+            <span class="top-bar-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Москва
+            </span>
+            <span class="top-bar-divider"></span>
+            <a href="tel:+79528142010" class="top-bar-phone">+7 (952) 814-20-10</a>
+            <span class="top-bar-divider"></span>
+            <span class="top-bar-free">Бесплатная консультация</span>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="/images/logo-full.png" alt="AGISI — AI Agent Systems" class="nav-logo-full">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#cases">Кейсы</a></li>
+                <li><a href="#pricing">Цены</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="/blog.html">Блог</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact" class="nav-cta">Обсудить проект</a></li>
+            </ul>
+            <div class="nav-right-mobile">
+                <a href="tel:+79528142010" class="nav-cta-mobile">Позвонить</a>
+                <button class="nav-burger" id="navBurger" aria-label="Меню">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#services" onclick="closeMobile()">Услуги</a>
+        <a href="#cases" onclick="closeMobile()">Кейсы</a>
+        <a href="#pricing" onclick="closeMobile()">Цены</a>
+        <a href="#about" onclick="closeMobile()">О нас</a>
+        <a href="/blog.html" onclick="closeMobile()">Блог</a>
+        <a href="#faq" onclick="closeMobile()">FAQ</a>
+        <a href="#contact" onclick="closeMobile()">Обсудить проект</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <span class="hero-badge-dot"></span>
+                Разработка AI-агентов в Москве
+            </div>
+            <h1 class="fade-in">Создаём <span class="gradient-text">AI-агентов</span>, которые работают за вас</h1>
+            <p class="hero-sub fade-in">Разрабатываем интеллектуальных ассистентов, чат-ботов и системы автоматизации на базе ИИ. Снижаем издержки на 40% и ускоряем процессы в 3 раза.</p>
+            <div class="hero-buttons fade-in">
+                <a href="#contact" class="btn btn-primary">
+                    Бесплатная консультация
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#cases" class="btn btn-secondary">Смотреть кейсы</a>
+            </div>
+            <div class="hero-stats fade-in">
+                <div class="hero-stat">
+                    <div class="hero-stat-num">50+</div>
+                    <div class="hero-stat-label">Проектов</div>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">40%</div>
+                    <div class="hero-stat-label">Снижение издержек</div>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <div class="hero-stat-num">2-3 нед</div>
+                    <div class="hero-stat-label">MVP готов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="trusted">
+        <div class="section-container">
+            <p class="trusted-label">Технологии, которые мы используем</p>
+            <div class="trusted-logos">
+                <span class="trusted-logo">Claude</span>
+                <span class="trusted-logo">GPT-4o</span>
+                <span class="trusted-logo">YandexGPT</span>
+                <span class="trusted-logo">GigaChat</span>
+                <span class="trusted-logo">LangChain</span>
+                <span class="trusted-logo">RAG</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Услуги</span>
+                <h2 class="section-title">Полный цикл разработки<br>AI-решений</h2>
+                <p class="section-desc">От аудита процессов до запуска и поддержки. Подбираем технологии под вашу задачу и бюджет.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/><path d="M10 21h4"/><path d="M9 17h6"/></svg>
+                    </div>
+                    <h3>AI-агенты для бизнеса</h3>
+                    <p>Автономные ИИ-агенты, которые обрабатывают запросы, принимают решения и выполняют задачи без участия человека.</p>
+                    <ul class="service-list">
+                        <li>Обработка входящих обращений 24/7</li>
+                        <li>Квалификация и маршрутизация лидов</li>
+                        <li>Автоматизация рутинных процессов</li>
+                        <li>Интеграция с CRM и ERP</li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                    </div>
+                    <h3>Умные чат-боты</h3>
+                    <p>Чат-боты нового поколения с пониманием контекста, памятью диалога и доступом к базе знаний компании.</p>
+                    <ul class="service-list">
+                        <li>Telegram, WhatsApp, веб-виджет</li>
+                        <li>База знаний и RAG-система</li>
+                        <li>Мультиязычная поддержка</li>
+                        <li>Передача оператору при необходимости</li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                    </div>
+                    <h3>RAG и базы знаний</h3>
+                    <p>Системы поиска по внутренним документам с генерацией ответов на основе актуальных данных компании.</p>
+                    <ul class="service-list">
+                        <li>Индексация документов и баз данных</li>
+                        <li>Семантический поиск</li>
+                        <li>Генерация ответов с цитированием</li>
+                        <li>Автообновление базы знаний</li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                    </div>
+                    <h3>Интеграции и автоматизация</h3>
+                    <p>Связываем AI с вашими системами: CRM, 1C, Битрикс24, AmoCRM, почта, календари, мессенджеры.</p>
+                    <ul class="service-list">
+                        <li>API-интеграции под ключ</li>
+                        <li>Автоматизация воронки продаж</li>
+                        <li>Обработка документов и отчётов</li>
+                        <li>Уведомления и триггеры</li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><path d="M12 20V10M18 20V4M6 20v-4"/></svg>
+                    </div>
+                    <h3>AI-аналитика</h3>
+                    <p>Прогнозирование, классификация и извлечение инсайтов из данных с помощью машинного обучения.</p>
+                    <ul class="service-list">
+                        <li>Прогноз спроса и продаж</li>
+                        <li>Анализ клиентского поведения</li>
+                        <li>Автоматическая отчётность</li>
+                        <li>Дашборды с AI-инсайтами</li>
+                    </ul>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                    </div>
+                    <h3>AI-консалтинг</h3>
+                    <p>Аудит процессов, стратегия внедрения ИИ, обучение команды. Помогаем понять, где AI принесёт максимум пользы.</p>
+                    <ul class="service-list">
+                        <li>Бесплатный аудит процессов</li>
+                        <li>Дорожная карта внедрения</li>
+                        <li>Обучение сотрудников</li>
+                        <li>Поддержка после запуска</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="section-alt">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Кейсы</span>
+                <h2 class="section-title">Результаты наших клиентов</h2>
+                <p class="section-desc">Реальные проекты с измеримыми результатами для бизнеса в Москве и по всей России.</p>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card fade-in">
+                    <div class="case-tag">E-commerce</div>
+                    <h3>AI-ассистент для интернет-магазина</h3>
+                    <p>Чат-бот с RAG-системой для автоматизации поддержки клиентов. Обрабатывает 80% обращений без участия оператора.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="case-metric-num">80%</span>
+                            <span class="case-metric-label">Обращений автоматизировано</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="case-metric-num">3x</span>
+                            <span class="case-metric-label">Скорость ответа</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card fade-in">
+                    <div class="case-tag">Недвижимость</div>
+                    <h3>Квалификация лидов для агентства</h3>
+                    <p>AI-агент квалифицирует входящие заявки, определяет бюджет и предпочтения, назначает встречи с менеджерами.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="case-metric-num">+35%</span>
+                            <span class="case-metric-label">Конверсия в сделку</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="case-metric-num">24/7</span>
+                            <span class="case-metric-label">Работа без перерывов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-card fade-in">
+                    <div class="case-tag">Юридическая компания</div>
+                    <h3>RAG-система по корпоративной базе</h3>
+                    <p>Система поиска по 10 000+ документов с генерацией структурированных ответов и ссылками на источники.</p>
+                    <div class="case-metrics">
+                        <div class="case-metric">
+                            <span class="case-metric-num">-60%</span>
+                            <span class="case-metric-label">Время поиска</span>
+                        </div>
+                        <div class="case-metric">
+                            <span class="case-metric-num">10K+</span>
+                            <span class="case-metric-label">Документов в базе</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Как мы работаем</span>
+                <h2 class="section-title">От идеи до запуска<br>за 4 шага</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step fade-in">
+                    <div class="process-step-num">01</div>
+                    <h3>Аудит и стратегия</h3>
+                    <p>Бесплатно анализируем ваши процессы, определяем точки автоматизации и готовим техническое задание.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-step-num">02</div>
+                    <h3>Проектирование</h3>
+                    <p>Выбираем AI-модели, проектируем архитектуру, согласовываем интеграции и сценарии работы.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-step-num">03</div>
+                    <h3>Разработка и тесты</h3>
+                    <p>Разрабатываем MVP за 2-3 недели, тестируем на реальных данных, итеративно улучшаем.</p>
+                </div>
+                <div class="process-step fade-in">
+                    <div class="process-step-num">04</div>
+                    <h3>Запуск и поддержка</h3>
+                    <p>Внедряем в рабочие процессы, обучаем команду, мониторим и оптимизируем в течение 30 дней.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section-alt">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Тарифы</span>
+                <h2 class="section-title">Прозрачные цены<br>без скрытых платежей</h2>
+                <p class="section-desc">Выберите подходящий тариф или закажите индивидуальный расчёт.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <div class="pricing-name">Базовый</div>
+                    <div class="pricing-desc">Простой AI-агент или чат-бот</div>
+                    <div class="pricing-price">
+                        <span class="pricing-currency">от</span>
+                        <span class="pricing-amount">100K</span>
+                        <span class="pricing-currency">руб</span>
+                    </div>
+                    <div class="pricing-period">разовая разработка</div>
+                    <ul class="pricing-features">
+                        <li>AI-чат-бот для 1 канала</li>
+                        <li>Подключение к базе знаний</li>
+                        <li>Интеграция с Telegram / WhatsApp</li>
+                        <li>Базовая аналитика</li>
+                        <li>14 дней поддержки</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn pricing-btn-outline">Обсудить</a>
+                </div>
+                <div class="pricing-card featured fade-in">
+                    <div class="pricing-badge">Популярный</div>
+                    <div class="pricing-name">Бизнес</div>
+                    <div class="pricing-desc">Кастомный AI-агент с интеграциями</div>
+                    <div class="pricing-price">
+                        <span class="pricing-currency">от</span>
+                        <span class="pricing-amount">250K</span>
+                        <span class="pricing-currency">руб</span>
+                    </div>
+                    <div class="pricing-period">разовая разработка</div>
+                    <ul class="pricing-features">
+                        <li>Мультиканальный AI-агент</li>
+                        <li>RAG-система по вашим данным</li>
+                        <li>CRM / 1C / Битрикс24 интеграция</li>
+                        <li>Кастомные сценарии и логика</li>
+                        <li>Аналитика и дашборд</li>
+                        <li>30 дней поддержки</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn pricing-btn-fill">Обсудить</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <div class="pricing-name">Под ключ</div>
+                    <div class="pricing-desc">Комплексное AI-решение для бизнеса</div>
+                    <div class="pricing-price">
+                        <span class="pricing-currency">от</span>
+                        <span class="pricing-amount">500K</span>
+                        <span class="pricing-currency">руб</span>
+                    </div>
+                    <div class="pricing-period">разовая разработка</div>
+                    <ul class="pricing-features">
+                        <li>Мультиагентная система</li>
+                        <li>Полная автоматизация процессов</li>
+                        <li>Интеграция со всеми системами</li>
+                        <li>AI-аналитика и прогнозы</li>
+                        <li>Обучение команды</li>
+                        <li>60 дней поддержки + SLA</li>
+                    </ul>
+                    <a href="#contact" class="pricing-btn pricing-btn-outline">Обсудить</a>
+                </div>
+            </div>
+            <p class="pricing-note">Подписка на поддержку и развитие — от 30 000 руб/мес. Индивидуальные условия для долгосрочных проектов.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">О нас</span>
+                <h2 class="section-title">Студия AI-разработки<br>в Москве</h2>
+            </div>
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <h3>Мы — AGISI</h3>
+                    <p>Разрабатываем AI-решения для бизнеса с фокусом на реальный результат. Наша экспертиза — на стыке машинного обучения, инженерии данных и бизнес-аналитики.</p>
+                    <p>Работаем с лучшими AI-моделями: Claude, GPT-4o, YandexGPT, GigaChat, Llama, Mistral. Подбираем технологии под задачу, а не наоборот.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <span>50+ успешных проектов</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <span>Офис в Москве, работаем по всей РФ</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <span>MVP за 2-3 недели</span>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <span>Гарантия и поддержка после запуска</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-tech">
+                    <h4>Наш стек</h4>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">OpenAI API</span>
+                        <span class="tech-tag">YandexGPT</span>
+                        <span class="tech-tag">GigaChat</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Redis</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">Vector DB</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section id="blog" class="section-alt">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Блог</span>
+                <h2 class="section-title">Новости и статьи об AI</h2>
+                <p class="section-desc">Делимся опытом, трендами и полезными материалами о внедрении ИИ в бизнес.</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img" style="background: linear-gradient(135deg, #E0F2FE, #BAE6FD);">
+                        <span class="blog-card-category">Тренды</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <time class="blog-card-date">2 апреля 2026</time>
+                        <h3><a href="/blog.html">AI-агенты в 2026: главные тренды и прогнозы</a></h3>
+                        <p>Обзор ключевых трендов в разработке AI-агентов: мультимодальность, автономность, интеграция с бизнес-процессами.</p>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img" style="background: linear-gradient(135deg, #F0FDF4, #BBF7D0);">
+                        <span class="blog-card-category">Кейс</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <time class="blog-card-date">28 марта 2026</time>
+                        <h3><a href="/blog.html">Как мы автоматизировали поддержку для e-commerce на 80%</a></h3>
+                        <p>Подробный разбор кейса: от аудита до внедрения RAG-бота, который обрабатывает тысячи обращений в месяц.</p>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-card-img" style="background: linear-gradient(135deg, #FEF3C7, #FDE68A);">
+                        <span class="blog-card-category">Гайд</span>
+                    </div>
+                    <div class="blog-card-body">
+                        <time class="blog-card-date">20 марта 2026</time>
+                        <h3><a href="/blog.html">RAG vs Fine-tuning: что выбрать для вашего бизнеса</a></h3>
+                        <p>Сравнение двух подходов к кастомизации AI-моделей. Плюсы, минусы и рекомендации для разных сценариев.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-more fade-in">
+                <a href="/blog.html" class="btn btn-secondary">Все статьи</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Частые вопросы</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Сколько стоит разработка AI-агента?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Стоимость зависит от сложности задачи. Базовый чат-бот с подключением к базе знаний — от 100 000 руб. Кастомный AI-агент с интеграциями — от 250 000 руб. Комплексная мультиагентная система — от 500 000 руб. Первая консультация бесплатна.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Сколько времени занимает разработка?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">MVP AI-агента готов за 2-3 недели. Полноценное решение с глубокими интеграциями — 1-2 месяца. Мы работаем итеративно: запускаем базовую версию быстро и дорабатываем на основе обратной связи.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Какие AI-модели вы используете?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Работаем со всеми ведущими моделями: Claude (Anthropic), GPT-4o (OpenAI), YandexGPT, GigaChat (Сбер), Llama, Mistral, DeepSeek. Подбираем оптимальную модель под задачу с учётом качества, стоимости и требований к локализации данных.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Работаете ли вы с компаниями за пределами Москвы?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Да, работаем удалённо по всей России и СНГ. Наш офис в Москве, но 90% коммуникации ведём онлайн. Для ключевых встреч используем видеозвонки или приезжаем лично.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Что будет после запуска? Есть ли поддержка?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Все тарифы включают период бесплатной поддержки (14-60 дней). После этого предлагаем подписку на поддержку и развитие от 30 000 руб/мес. В неё входят: мониторинг, обновления, доработки и приоритетная связь.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Данные останутся конфиденциальными?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Абсолютно. Подписываем NDA перед началом работы. Можем развернуть решение полностью на вашей инфраструктуре. Используем российские модели (YandexGPT, GigaChat) если требуется хранение данных в РФ.</div>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Чем вы отличаетесь от конкурентов?</span>
+                        <div class="faq-toggle">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">Мы не внедряем AI ради AI. Сначала анализируем, где автоматизация реально окупится. Используем лучшие модели под каждую задачу (не привязаны к одному вендору). Быстрый MVP за 2-3 недели. Прозрачные цены и честные сроки.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-alt">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <span class="section-label">Контакты</span>
+                <h2 class="section-title">Обсудим ваш проект?</h2>
+                <p class="section-desc">Оставьте заявку, и мы свяжемся с вами в течение 2 часов в рабочее время.</p>
+            </div>
+            <div class="contact-grid fade-in">
+                <div class="contact-info">
+                    <h3>Свяжитесь с нами</h3>
+                    <p>Расскажите о задаче — мы бесплатно оценим возможности AI-автоматизации для вашего бизнеса.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Телефон</strong>
+                                <a href="tel:+79528142010">+7 (952) 814-20-10</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Email</strong>
+                                <a href="mailto:hello@asigi.ru">hello@asigi.ru</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Офис</strong>
+                                <span>Москва, Россия</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0EA5E9" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Telegram</strong>
+                                <a href="https://t.me/agi_studio" target="_blank" rel="noopener">@agi_studio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" action="https://formsubmit.co/hello@asigi.ru" method="POST">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта AGISI">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://asigi.ru/?sent=1">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-field">Email или Telegram</label>
+                        <input type="text" id="contact-field" name="contact" placeholder="email@company.ru или @telegram" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Что вас интересует?</label>
+                        <select id="service" name="service">
+                            <option value="">Выберите услугу</option>
+                            <option value="ai-agent">AI-агент для бизнеса</option>
+                            <option value="chatbot">Умный чат-бот</option>
+                            <option value="rag">RAG / база знаний</option>
+                            <option value="integration">Интеграция и автоматизация</option>
+                            <option value="analytics">AI-аналитика</option>
+                            <option value="consulting">Консалтинг</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Расскажите о задаче</label>
+                        <textarea id="message" name="message" placeholder="Опишите кратко, что хотите автоматизировать..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Отправить заявку</button>
+                    <p class="form-note">Ответим в течение 2 часов в рабочее время (ПН-ПТ, 10:00-19:00)</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="cta-content fade-in">
+            <h2>Готовы автоматизировать бизнес с AI?</h2>
+            <p>Получите бесплатную консультацию и узнайте, как AI-агенты могут оптимизировать ваши процессы.</p>
+            <a href="#contact" class="btn btn-primary btn-white">
+                Бесплатная консультация
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <a href="/" class="footer-logo">
+                    <img src="/images/logo-full.png" alt="AGISI" class="footer-logo-img">
+                </a>
+                <p class="footer-desc">Студия разработки AI-агентов в Москве. Создаём интеллектуальные решения для бизнеса.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Услуги</h4>
+                <ul>
+                    <li><a href="#services">AI-агенты</a></li>
+                    <li><a href="#services">Чат-боты</a></li>
+                    <li><a href="#services">RAG-системы</a></li>
+                    <li><a href="#services">Интеграции</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="/blog.html">Блог</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="tel:+79528142010">+7 (952) 814-20-10</a></li>
+                    <li><a href="mailto:hello@asigi.ru">hello@asigi.ru</a></li>
+                    <li><a href="https://t.me/agi_studio" target="_blank" rel="noopener">Telegram</a></li>
+                    <li><span>Москва, Россия</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AGISI. Разработка AI-агентов в Москве.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
