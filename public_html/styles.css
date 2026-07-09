@@ -1561,3 +1561,83 @@ section {
         gap: 24px;
     }
 }
+
+/* ===== FLOATING TELEGRAM BUTTON ===== */
+.telegram-float-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #24A1DE 0%, #0088CC 100%);
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(36, 161, 222, 0.4);
+    z-index: 998;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.telegram-float-btn:hover {
+    transform: translateY(-4px) scale(1.08);
+    box-shadow: 0 8px 24px rgba(36, 161, 222, 0.5), 0 0 0 4px rgba(36, 161, 222, 0.15);
+    color: #ffffff;
+}
+
+.telegram-float-btn:active {
+    transform: translateY(-1px) scale(0.96);
+    box-shadow: 0 2px 8px rgba(36, 161, 222, 0.4);
+}
+
+.telegram-float-btn svg {
+    transition: transform 0.3s ease;
+    transform: rotate(-5deg);
+}
+
+.telegram-float-btn:hover svg {
+    transform: translate(2px, -2px) rotate(5deg) scale(1.05);
+}
+
+/* Подсказка (Tooltip) */
+.telegram-float-btn::before {
+    content: "Связаться в Telegram";
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    background: var(--gray-800);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.telegram-float-btn:hover::before {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 768px) {
+    .telegram-float-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .telegram-float-btn::before {
+        display: none;
+    }
+}
+
