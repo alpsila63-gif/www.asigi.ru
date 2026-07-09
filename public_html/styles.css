@@ -1641,3 +1641,161 @@ section {
     }
 }
 
+/* ===== NEW ANIMATIONS AND IMAGES ===== */
+
+/* Светящиеся фоновые сферы */
+.glow-blob {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+    mix-blend-mode: multiply;
+}
+
+.glow-blob-1 {
+    top: 5%;
+    left: -10%;
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(6, 182, 212, 0.05) 70%, transparent 100%);
+    animation: pulse-glow-1 12s infinite alternate ease-in-out;
+}
+
+.glow-blob-2 {
+    bottom: 15%;
+    right: -10%;
+    background: radial-gradient(circle, rgba(168, 85, 247, 0.18) 0%, rgba(14, 165, 233, 0.05) 70%, transparent 100%);
+    animation: pulse-glow-2 12s infinite alternate ease-in-out;
+    animation-delay: -4s;
+}
+
+@keyframes pulse-glow-1 {
+    0% { transform: scale(1) translate(0, 0); }
+    50% { transform: scale(1.15) translate(40px, 30px); }
+    100% { transform: scale(0.9) translate(-20px, -10px); }
+}
+
+@keyframes pulse-glow-2 {
+    0% { transform: scale(1) translate(0, 0); }
+    50% { transform: scale(1.1) translate(-30px, -40px); }
+    100% { transform: scale(0.95) translate(10px, 20px); }
+}
+
+/* Главное изображение Hero */
+.hero-image-wrapper {
+    position: relative;
+    max-width: 900px;
+    margin: 48px auto 64px;
+    border-radius: var(--radius-xl);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(14, 165, 233, 0.15);
+    box-shadow: 0 30px 60px rgba(14, 165, 233, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    overflow: hidden;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-image-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 140%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-image-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: calc(var(--radius-xl) - 8px);
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Раздел О Нас - правая колонка */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.about-visual {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    box-shadow: var(--shadow-md);
+    background: var(--white);
+    padding: 8px;
+}
+
+.about-visual-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: calc(var(--radius-lg) - 4px);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-visual:hover .about-visual-img {
+    transform: scale(1.03);
+}
+
+/* ===== УЛУЧШЕННЫЕ АНИМАЦИИ КАРТОЧЕК ===== */
+.service-card, .case-card, .pricing-card, .blog-card {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease !important;
+}
+
+.service-card:hover, .case-card:hover, .pricing-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.08), 0 1px 3px rgba(14, 165, 233, 0.05) !important;
+    border-color: rgba(14, 165, 233, 0.3) !important;
+}
+
+.service-icon svg {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), stroke 0.3s ease;
+}
+
+.service-card:hover .service-icon svg {
+    transform: scale(1.12) rotate(3deg);
+    stroke: #0284c7;
+}
+
+/* Поочередное staggered появление элементов */
+.services-grid > *:nth-child(1) { transition-delay: 0s; }
+.services-grid > *:nth-child(2) { transition-delay: 0.1s; }
+.services-grid > *:nth-child(3) { transition-delay: 0.2s; }
+.services-grid > *:nth-child(4) { transition-delay: 0.3s; }
+.services-grid > *:nth-child(5) { transition-delay: 0.4s; }
+.services-grid > *:nth-child(6) { transition-delay: 0.5s; }
+
+.cases-grid > *:nth-child(1) { transition-delay: 0s; }
+.cases-grid > *:nth-child(2) { transition-delay: 0.15s; }
+.cases-grid > *:nth-child(3) { transition-delay: 0.3s; }
+
+.pricing-grid > *:nth-child(1) { transition-delay: 0s; }
+.pricing-grid > *:nth-child(2) { transition-delay: 0.15s; }
+.pricing-grid > *:nth-child(3) { transition-delay: 0.3s; }
+
+.blog-grid > *:nth-child(1) { transition-delay: 0s; }
+.blog-grid > *:nth-child(2) { transition-delay: 0.15s; }
+.blog-grid > *:nth-child(3) { transition-delay: 0.3s; }
+
+.process-step:nth-child(1) { transition-delay: 0s; }
+.process-step:nth-child(2) { transition-delay: 0.1s; }
+.process-step:nth-child(3) { transition-delay: 0.2s; }
+.process-step:nth-child(4) { transition-delay: 0.3s; }
+
