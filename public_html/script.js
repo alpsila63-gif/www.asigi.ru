@@ -89,3 +89,13 @@ document.querySelectorAll('.blog-category-btn').forEach(btn => {
         });
     });
 });
+
+// Parallax scroll effect for background grid nodes
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY;
+    document.querySelectorAll('.parallax-node').forEach(node => {
+        const speed = parseFloat(node.getAttribute('data-speed')) || 0.1;
+        node.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+});
+

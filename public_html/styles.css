@@ -1824,4 +1824,73 @@ section {
     transform: rotate(5deg) scale(1.08);
 }
 
+/* ===== BACKGROUND PARALLAX GRID LINES ===== */
+.bg-grid-lines {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.bg-line {
+    position: relative;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        rgba(15, 23, 42, 0.02) 0%, 
+        rgba(15, 23, 42, 0.05) 50%, 
+        rgba(15, 23, 42, 0.02) 100%
+    );
+}
+
+.bg-line-glow {
+    position: absolute;
+    top: -200px;
+    left: -1px;
+    width: 3px;
+    height: 180px;
+    background: linear-gradient(to bottom, 
+        transparent 0%, 
+        var(--primary) 50%, 
+        transparent 100%
+    );
+    opacity: 0.4;
+    animation: move-glow 15s infinite linear;
+}
+
+.bg-line:nth-child(1) .bg-line-glow { animation-duration: 22s; animation-delay: -2s; }
+.bg-line:nth-child(2) .bg-line-glow { animation-duration: 28s; animation-delay: -7s; }
+.bg-line:nth-child(3) .bg-line-glow { animation-duration: 20s; animation-delay: -12s; }
+.bg-line:nth-child(4) .bg-line-glow { animation-duration: 25s; animation-delay: -4s; }
+
+@keyframes move-glow {
+    0% { top: -200px; }
+    100% { top: 100%; }
+}
+
+.parallax-node {
+    position: absolute;
+    left: -6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 2.5px solid var(--primary);
+    box-shadow: 0 0 8px rgba(14, 165, 233, 0.4);
+    opacity: 0.6;
+    will-change: transform;
+}
+
+.bg-line:nth-child(1) .parallax-node { top: 25%; }
+.bg-line:nth-child(2) .parallax-node { top: 65%; }
+.bg-line:nth-child(3) .parallax-node { top: 40%; }
+.bg-line:nth-child(4) .parallax-node { top: 80%; }
+
+
 
