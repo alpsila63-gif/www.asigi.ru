@@ -17,7 +17,7 @@ jobs:
           switches: -avz --delete --chmod=Du=rwx,Dgo=rx,Fu=rw,Fgo=r
           path: public_html/
           remote_path: /var/www/agisi.ru/public_html/
-          remote_host: ${{ secrets.SSH_HOST }}
-          remote_user: ${{ secrets.SSH_USER }}
+          remote_host: 166.1.62.19
+          remote_user: root
           remote_key: ${{ secrets.SSH_KEY }}
-          remote_port: ${{ secrets.SSH_PORT }}
+          remote_port: 22
