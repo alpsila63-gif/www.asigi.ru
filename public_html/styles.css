@@ -1799,3 +1799,29 @@ section {
 .process-step:nth-child(3) { transition-delay: 0.2s; }
 .process-step:nth-child(4) { transition-delay: 0.3s; }
 
+/* ===== TOP BAR TELEGRAM ICON ===== */
+.top-bar-telegram {
+    color: #0EA5E9; /* theme primary blue */
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.top-bar-telegram:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+.top-bar-telegram svg {
+    fill: currentColor;
+    transform: rotate(-5deg);
+    transition: transform 0.2s ease;
+}
+
+.top-bar-telegram:hover svg {
+    transform: rotate(5deg) scale(1.08);
+}
+
+
